@@ -6,7 +6,6 @@
 -->
 <html>
 	<head>
-		<title>Bar Chart</title>
     <script src="verticle.js"></script>
     <script src="verticle2.js"></script>
     <style>
@@ -28,6 +27,9 @@
 		<link rel="stylesheet" href = "index2.css" />
 		-->
 		<style>
+		.paypal{
+			margin:20px auto;
+		}
 		#result1 {
     display:block;
     font-family: sans-serif;
@@ -50,6 +52,12 @@
 		</style>
 	</head>
 	<body>
+	
+	
+	
+	
+	
+	
 	<div id="container" style="width: 75%;">
         <canvas id="canvas"></canvas>
     </div>
@@ -58,6 +66,8 @@
     <button id="removeDataset">Remove Dataset</button>
     <button id="addData">Add Data</button>
     <button id="removeData">Remove Data</button>
+		
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -136,64 +146,65 @@
 										</div>
 									</a>
 								</article>
+								
 								<article class="style2">
 									<span class="image">
 										<!-- https://codepen.io/giana/pen/GJMBEv -->
 	
-<div id="background"><!-- Main background -->
+									<div id="background"><!-- Main background -->
              
         
-		<div id="result1">0</div> 
-         <div id="main">
-             <div id="first-rows">
-              <button class="del-bg" id="delete">Del</button>
-                 <button value="%" class="btn-style operator opera-bg fall-back">%</button>
-                 <button value="+" class="btn-style opera-bg value align operator">+</button>
-                 </div>
-                 
-               <div class="rows">
-             <button value="7" class="btn-style num-bg num first-child">7</button>
-                 <button value="8" class="btn-style num-bg num">8</button>
-                 <button value="9" class="btn-style num-bg num">9</button>
-                 <button value="-" class="btn-style opera-bg operator">-</button>
-                 </div>
-                 
-                 <div class="rows">
-                 <button value="4" class="btn-style num-bg num first-child">4</button>
-                 <button value="5" class="btn-style num-bg num">5</button>
-                 <button value="6" class="btn-style num-bg num">6</button>
-                 <button value="*" class="btn-style opera-bg operator">x</button>
-                 </div>
-                 
-                 <div class="rows">
-                 <button value="1" class="btn-style num-bg num first-child">1</button>
-                 <button value="2" class="btn-style num-bg num">2</button>
-                 <button value="3" class="btn-style num-bg num">3</button>
-                 <button value="/" class="btn-style opera-bg operator">/</button>
-                 </div>
-                 
-                 <div class="rows">
-                 <button value="0" class="num-bg zero" id="delete">0</button>
-                 <button value="." class="btn-style num-bg period fall-back">.</button>
-                 <button value="=" id="eqn-bg" class="eqn align">=</button>
-                 </div>
-                
-             </div>
-         
-         </div>
-									</span>										
-									</a>
+									<div id="result1">0</div> 
+									 <div id="main">
+										 <div id="first-rows">
+										  <button class="del-bg" id="delete">Del</button>
+											 <button value="%" class="btn-style operator opera-bg fall-back">%</button>
+											 <button value="+" class="btn-style opera-bg value align operator">+</button>
+											 </div>
+											 
+										   <div class="rows">
+										 <button value="7" class="btn-style num-bg num first-child">7</button>
+											 <button value="8" class="btn-style num-bg num">8</button>
+											 <button value="9" class="btn-style num-bg num">9</button>
+											 <button value="-" class="btn-style opera-bg operator">-</button>
+											 </div>
+											 
+											 <div class="rows">
+											 <button value="4" class="btn-style num-bg num first-child">4</button>
+											 <button value="5" class="btn-style num-bg num">5</button>
+											 <button value="6" class="btn-style num-bg num">6</button>
+											 <button value="*" class="btn-style opera-bg operator">x</button>
+											 </div>
+											 
+											 <div class="rows">
+											 <button value="1" class="btn-style num-bg num first-child">1</button>
+											 <button value="2" class="btn-style num-bg num">2</button>
+											 <button value="3" class="btn-style num-bg num">3</button>
+											 <button value="/" class="btn-style opera-bg operator">/</button>
+											 </div>
+											 
+											 <div class="rows">
+											 <button value="0" class="num-bg zero" id="delete">0</button>
+											 <button value="." class="btn-style num-bg period fall-back">.</button>
+											 <button value="=" id="eqn-bg" class="eqn align">=</button>
+											 </div>
+											
+										 </div>
+									 
+									 </div>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										<div class ="paypal">
+										<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+										<input type="hidden" name="cmd" value="_s-xclick">
+										<input type="hidden" name="hosted_button_id" value="T2QHXW8B38BUN">
+										<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+										<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+										</form>
 										</div>
-									</a>
+									</span>
+									
 								</article>
 								<article class="style4">
 									<span class="image">
@@ -355,121 +366,121 @@
 			<script src ="index2.js"></script> 
 			
 			<script>
-        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        var color = Chart.helpers.color;
-        var barChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [{
-                label: 'Dataset 1',
-                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.red,
-                borderWidth: 1,
-                data: [
-                    100,
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor()
-                ]
-            }, {
-                label: 'Dataset 2',
-                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.blue,
-                borderWidth: 1,
-                data: [
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor()
-                ]
-            }]
+				var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				var color = Chart.helpers.color;
+				var barChartData = {
+					labels: ["January", "February", "March", "April", "May", "June", "July"],
+					datasets: [{
+						label: 'Dataset 1',
+						backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+						borderColor: window.chartColors.red,
+						borderWidth: 1,
+						data: [
+							100,
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					}, {
+						label: 'Dataset 2',
+						backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+						borderColor: window.chartColors.blue,
+						borderWidth: 1,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					}]
 
-        };
+				};
 
-        window.onload = function() {
-            var ctx = document.getElementById("canvas").getContext("2d");
-            window.myBar = new Chart(ctx, {
-                type: 'bar',
-                data: barChartData,
-                options: {
-                    responsive: true,
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Chart.js Bar Chart'
-                    }
-                }
-            });
+				window.onload = function() {
+					var ctx = document.getElementById("canvas").getContext("2d");
+					window.myBar = new Chart(ctx, {
+						type: 'bar',
+						data: barChartData,
+						options: {
+							responsive: true,
+							legend: {
+								position: 'top',
+							},
+							title: {
+								display: true,
+								text: 'Chart.js Bar Chart'
+							}
+						}
+					});
 
-        };
+				};
 
-        document.getElementById('randomizeData').addEventListener('click', function() {
-            var zero = Math.random() < 0.2 ? true : false;
-            barChartData.datasets.forEach(function(dataset) {
-                dataset.data = dataset.data.map(function() {
-                    return zero ? 0.0 : randomScalingFactor();
-                });
+				document.getElementById('randomizeData').addEventListener('click', function() {
+					var zero = Math.random() < 0.2 ? true : false;
+					barChartData.datasets.forEach(function(dataset) {
+						dataset.data = dataset.data.map(function() {
+							return zero ? 0.0 : randomScalingFactor();
+						});
 
-            });
-            window.myBar.update();
-        });
+					});
+					window.myBar.update();
+				});
 
-        var colorNames = Object.keys(window.chartColors);
-        document.getElementById('addDataset').addEventListener('click', function() {
-            var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
-            var dsColor = window.chartColors[colorName];
-            var newDataset = {
-                label: 'Dataset ' + barChartData.datasets.length,
-                backgroundColor: color(dsColor).alpha(0.5).rgbString(),
-                borderColor: dsColor,
-                borderWidth: 1,
-                data: []
-            };
+				var colorNames = Object.keys(window.chartColors);
+				document.getElementById('addDataset').addEventListener('click', function() {
+					var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
+					var dsColor = window.chartColors[colorName];
+					var newDataset = {
+						label: 'Dataset ' + barChartData.datasets.length,
+						backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+						borderColor: dsColor,
+						borderWidth: 1,
+						data: []
+					};
 
-            for (var index = 0; index < barChartData.labels.length; ++index) {
-                newDataset.data.push(randomScalingFactor());
-            }
+					for (var index = 0; index < barChartData.labels.length; ++index) {
+						newDataset.data.push(randomScalingFactor());
+					}
 
-            barChartData.datasets.push(newDataset);
-            window.myBar.update();
-        });
+					barChartData.datasets.push(newDataset);
+					window.myBar.update();
+				});
 
-        document.getElementById('addData').addEventListener('click', function() {
-            if (barChartData.datasets.length > 0) {
-                var month = MONTHS[barChartData.labels.length % MONTHS.length];
-                barChartData.labels.push(month);
+				document.getElementById('addData').addEventListener('click', function() {
+					if (barChartData.datasets.length > 0) {
+						var month = MONTHS[barChartData.labels.length % MONTHS.length];
+						barChartData.labels.push(month);
 
-                for (var index = 0; index < barChartData.datasets.length; ++index) {
-                    //window.myBar.addData(randomScalingFactor(), index);
-                    barChartData.datasets[index].data.push(randomScalingFactor());
-                }
+						for (var index = 0; index < barChartData.datasets.length; ++index) {
+							//window.myBar.addData(randomScalingFactor(), index);
+							barChartData.datasets[index].data.push(randomScalingFactor());
+						}
 
-                window.myBar.update();
-            }
-        });
+						window.myBar.update();
+					}
+				});
 
-        document.getElementById('removeDataset').addEventListener('click', function() {
-            barChartData.datasets.splice(0, 1);
-            window.myBar.update();
-        });
+				document.getElementById('removeDataset').addEventListener('click', function() {
+					barChartData.datasets.splice(0, 1);
+					window.myBar.update();
+				});
 
-        document.getElementById('removeData').addEventListener('click', function() {
-            barChartData.labels.splice(-1, 1); // remove the label first
+				document.getElementById('removeData').addEventListener('click', function() {
+					barChartData.labels.splice(-1, 1); // remove the label first
 
-            barChartData.datasets.forEach(function(dataset, datasetIndex) {
-                dataset.data.pop();
-            });
+					barChartData.datasets.forEach(function(dataset, datasetIndex) {
+						dataset.data.pop();
+					});
 
-            window.myBar.update();
-        });
-    </script>
+					window.myBar.update();
+				});
+			</script>
 			
 	</body>
 </html>
